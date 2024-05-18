@@ -44,3 +44,5 @@ export const shadow = {
 }
 
 export const backgroundImage = "https://raw.githubusercontent.com/oztasyasin/walmateImages/main/face1.png";
+
+export const baseUrl = "http://192.168.1.35:5001";

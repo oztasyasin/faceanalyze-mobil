@@ -7,8 +7,6 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack'
 import Home from './pages/Home'
 import Result from './pages/Result'
-import Loader from './components/Loader'
-import { isIos } from './data/staticDatas';
 import { StatusBar } from 'expo-status-bar';
 import FullResult from './pages/FullResult'
 const Stack = createStackNavigator();
@@ -40,5 +38,4 @@ const App = () => {
         </SafeAreaProvider >
     )
 }
-
 export default App

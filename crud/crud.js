@@ -1,9 +1,10 @@
 import axios from "axios";
+import { baseUrl } from "../data/staticDatas";
 
 export const SendImage = (data) => {
     var config = {
         method: 'post',
-        url: `http://192.168.1.35:5001/analyze`,
+        url: `${baseUrl}/analyze`,
         headers: {
             "Content-Type": "application/json"
         },
@@ -15,7 +16,7 @@ export const SendImage = (data) => {
 export const GetResultsWithAllLibraries = (data) => {
     var config = {
         method: 'post',
-        url: `http://192.168.1.35:5001/analyzeWithAll`,
+        url: `${baseUrl}/analyzeWithAll`,
         headers: {
             "Content-Type": "application/json"
         },
